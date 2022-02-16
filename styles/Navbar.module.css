@@ -1,0 +1,81 @@
+.container{
+    height: 100px;
+    padding: 0 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.item{
+    flex: 1;
+    display: flex;
+}
+.item:nth-child(2) {
+    flex: 3;
+}
+.title{
+    padding: 10px;
+    margin-left: 10px;
+    font-style:italic;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.call {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-content: center;
+    padding: 10px;
+}
+.texts{
+    margin-left: 10px;
+    color:crimson;
+}
+.text{
+    font-size: 14px;
+
+}
+.text:nth-child(2) {
+    font-size: 16px;
+    font-weight: 900;
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: crimson;
+    padding: 0;
+    list-style: none;
+    margin-left: 20px;
+}
+.listItems {
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+}
+.cartItem{
+    display: flex;
+    position: relative;
+}
+.cart{
+    margin-left: 2px;
+    cursor: pointer;
+}
+.counter{
+    color: white;
+    background-color: #d1411e;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -3px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+}
+

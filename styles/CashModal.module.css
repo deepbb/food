@@ -1,0 +1,63 @@
+.containerModal{
+    position: absolute;
+    background-color:#333;
+    height: calc(65vh - 100px);
+    width: 40%;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    color:white;
+    text-align: center;
+}
+.modalElements{
+    display: flex;
+    flex-direction: column;
+
+}
+.input{
+    margin-bottom: 30px;
+    height: 25px;
+    width: 70%;
+    align-self: center;
+    background-color:white;
+    border-style: none;
+    border-radius: 5px;
+
+}
+.input:focus{
+    outline: none;
+}
+.btn{
+    width: 30%;
+    align-self: center;
+    height: 25px;
+    background-color: chocolate;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.btn:hover{
+    background-color: green;
+}
+.items{
+    list-style: none;
+    color:chocolate;
+    font-weight: 600;
+    
+}
+.orderName{
+    margin-left: 20px;
+}
+.cartOrder{
+    display: flex;
+    justify-content:space-evenly;
+}
+.total{
+    list-style: none;
+    color: white;
+    font-weight: 600;
+}

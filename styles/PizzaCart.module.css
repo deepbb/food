@@ -1,0 +1,27 @@
+.container{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.img:hover{
+    background-color:whitesmoke;
+}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+.price{
+    font-weight: bolder;
+    font-size: 18px;
+    color: tomato;
+}
+.para{
+    text-align: center;
+    font-size: 18px;
+}

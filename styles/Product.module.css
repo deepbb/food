@@ -1,0 +1,84 @@
+.container{
+    height: calc(100vh - 100px);
+    display: flex;
+
+}
+.leftContainer{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightContainer {
+    flex:1
+
+}
+.imgContainer{
+    height: 60%;
+    width: 60%;
+    position: relative;
+}
+.sizes{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 20px;
+}
+.size{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+}
+.size:nth-child(2){
+    width:60px;
+    height: 60px;
+}
+.size:last-child{
+    width:80px;
+    height: 80px;
+}
+
+.price{
+    color:tomato
+}
+.number{
+    position:absolute;
+    top: -5px;
+    right:-20px;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+}
+.ingList{
+    display: flex;  
+}
+.ingredients{
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.addItem {
+    margin-top: 20px;
+    display: flex;
+}
+.addInput{
+    height: 40px;
+    width: 50px;
+}
+.addBtn{
+    margin-left: 20px;
+    background-color: #d1411e;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+
+}

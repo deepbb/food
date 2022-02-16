@@ -1,0 +1,36 @@
+.container{
+    height: calc(70vh - 100px);
+    margin-top: 10px;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    font-size: 40px;
+    text-align: center;
+    color: crimson;
+}
+.food{
+    color:green;
+    font-weight: 800;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.imgContainer{
+    margin-left: 10px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+.imgContainer1{
+    width: 250px;
+    height: 250px;
+    position: relative;
+
+}
+.imgContainer2{
+    margin-right: 10px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+
+}

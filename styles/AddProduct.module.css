@@ -1,0 +1,8 @@
+.prodcontainer{
+    color:blue;
+    margin-left: 10px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}

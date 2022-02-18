@@ -4,6 +4,8 @@ import { useState } from "react"
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { addProduct } from "../../redux/cartSlice";
+import { NEXT_URL } from "../../url";
+
 
 function Product({pizzaCart}) {
     console.log(pizzaCart);
@@ -110,7 +112,7 @@ function Product({pizzaCart}) {
 
 export async function  getServerSideProps ({params}) {
     //const id = params.id
-    const res = await axios.get(NEXT_URL + `/api/products/${params.id}`)
+    const res = await axios.get(NEXT_URL+ `/api/products/${params.id}`)
     console.log(res.data);
     return {
       props: {

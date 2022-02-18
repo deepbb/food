@@ -5,6 +5,7 @@ import Feature from '../Components/Feature'
 import PizzaList from '../Components/PizzaList'
 import Testimonials from '../Components/Testimonials'
 import styles from '../styles/Home.module.css'
+import { NEXT_URL } from '../url'
 
 
 
@@ -26,7 +27,7 @@ export default function Home({product}) {
 }
 
 export async function  getServerSideProps () {
-  const res = await axios.get("http://localhost:3000/api/products")
+  const res = await axios.get(NEXT_URL + "/api/products")
   // console.log(res.data);
   return {
     props: {
@@ -34,3 +35,5 @@ export async function  getServerSideProps () {
     },
   }
 }
+
+//"http://localhost:3000/api/products"

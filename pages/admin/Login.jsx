@@ -13,7 +13,7 @@ function Login() {
         try {
         const res = await axios.post( NEXT_URL + "/api/login/", {username,password})
         console.log(res);
-        router.push("/admin")
+        router.push(NEXT_URL + "/admin")
         } catch (err) {
             console.log(err);
         }

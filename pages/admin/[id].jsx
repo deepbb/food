@@ -23,7 +23,7 @@ function AdminOrders({order}) {
 
    const handleStatus = async ()=> {
     try {
-        const res = await axios.put(`http://localhost:3000/api/orders/${order._id}`, {
+        const res = await axios.put(`${NEXT_URL}/api/orders/${order._id}`, {
           status: 1,
         });
         console.log(res);
@@ -79,7 +79,7 @@ function AdminOrders({order}) {
 }
 
 export async function getServerSideProps({params}) {
-  const res =  await axios.get(`http://localhost:3000/api/orders/${params.id}`)
+  const res =  await axios.get(`${NEXT_URL}/api/orders/${params.id}`)
   console.log(res);
   return {
     props:{

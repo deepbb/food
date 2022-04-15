@@ -1,6 +1,7 @@
 import axios from 'axios';
 import styles from "../../styles/AdminOrders.module.css"
 import {useRouter} from "next/router"
+import {NEXT_URL} from "../../url"
 
 function AdminOrders({order}) {
   const status = ["preparing", "on the way" , "delivered"]
@@ -12,7 +13,7 @@ function AdminOrders({order}) {
   console.log(order);
 
   const handleDelete = async ()=> {
-    const res = await axios.delete(`http://localhost:3000/api/orders/${order._id}`)
+    const res = await axios.delete( `${NEXT_URL}/api/orders/${order._id}`)
     console.log(res);
     if(res.status === 200) {
       router.push(`/admin`)

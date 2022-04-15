@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import AddProduct from "../../Components/AddProduct";
 import styles from "../../styles/Admin.module.css"
+import { NEXT_URL } from "../../url";
 
 const Index = ({orders}) => {
     const [show ,setShow] = useState(false)
@@ -109,7 +110,7 @@ const handleDelete = ()=> {
 };
 
 export async function getServerSideProps() {
-    const res = await axios.get("http://localhost:3000/api/orders")
+    const res = await axios.get( NEXT_URL + "/api/orders")
     console.log(res.data);
     return {
         props: {
